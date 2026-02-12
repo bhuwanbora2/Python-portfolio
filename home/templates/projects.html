@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuwan Bora | Python Django Developer</title>
+ <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav>
+        <div class="nav-container">
+            <!-- Profile Photo and Name -->
+            <div class="profile-section">
+        <img src="{% static 'IMAGES/bb1.jpg' %}" alt="Bhuwan Bora" class="profile-photo">               
+        <span class="nav-name">Bhuwan Bora</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="{% url 'home' %}">Home</a> |
+                <a href="{% url 'about' %}">About</a> |
+                <a href="{% url 'projects' %}">Projects</a> |
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects-page">
+        <div class="container">
+            <h1 class="page-title">My Projects & Experience</h1>
+            <p class="page-subtitle">
+                Here are some of the projects I've worked on, showcasing my skills in web development, 
+                AI/ML, and computer vision.
+            </p>
+
+            <div class="projects-container">
+
+                <!-- Project 1: Object Detection System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src={% static 'IMAGES/OBJECT.png' %} alt="Object Detection Project">
+                        <div class="project-overlay">
+                            <span class="project-category">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🎯 Real-time Object Detection System</h3>
+                        <p>
+                            Developed a comprehensive real-time object detection system using YOLOv8 and OpenCV. 
+                            The project involved training custom models on specialized datasets and implementing 
+                            efficient detection algorithms for various use cases including security surveillance 
+                            and inventory management. Achieved high accuracy with optimized inference speed.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time video processing with 30+ FPS</li>
+                                <li>Custom trained YOLOv8 model on specific datasets</li>
+                                <li>Multi-object tracking and classification</li>
+                                <li>Web interface for live monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: AI Chatbot -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'IMAGES/chatbot.avif' %}" alt="AI Chatbot Project">
+                        <div class="project-overlay">
+                            <span class="project-category">AI & NLP</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>💬 Intelligent AI Chatbot with n8n</h3>
+                        <p>
+                            Built an intelligent conversational AI chatbot using n8n AI Agent framework. 
+                            The chatbot leverages natural language processing to understand user queries 
+                            and provide contextual responses. Integrated with various APIs and databases 
+                            for enhanced functionality, enabling automated customer support and information 
+                            retrieval with high accuracy.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Natural language understanding and processing</li>
+                                <li>Integration with multiple data sources and APIs</li>
+                                <li>Context-aware conversation handling</li>
+                                <li>Multi-language support capabilities</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">AI Agent</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: RAG-based LLM System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'IMAGES/RAG.webp' %}" alt="RAG System Project">
+                        <div class="project-overlay">
+                            <span class="project-category">AI & Machine Learning</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>📚 RAG Framework Implementation</h3>
+                        <p>
+                            Implemented a Retrieval-Augmented Generation (RAG) system that enhances 
+                            large language model responses with relevant document retrieval. This project 
+                            demonstrates understanding of modern AI architectures and their practical 
+                            applications in information retrieval and question-answering systems. The system 
+                            efficiently processes large document collections and provides accurate, contextual answers.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Vector database integration for efficient document search</li>
+                                <li>Semantic search with high relevance scoring</li>
+                                <li>LLM integration for response generation</li>
+                                <li>Support for multiple document formats</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLM</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Vector Database</span>
+                            <span class="tech-tag">Embeddings</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Django Web Application -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'IMAGES/django.png' %}" alt="Django Project">
+                        <div class="project-overlay">
+                            <span class="project-category">Web Development</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🌐 Full-Stack Django Web Applications</h3>
+                        <p>
+                            Developed multiple full-stack web applications using Django framework. 
+                            Experience includes implementing secure user authentication, designing efficient 
+                            database schemas, building RESTful APIs, and deploying scalable applications. 
+                            Projects focused on clean code practices, comprehensive testing, and optimized 
+                            database queries for high performance.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>User authentication and authorization system</li>
+                                <li>RESTful API with Django REST Framework</li>
+                                <li>Responsive frontend with modern UI/UX</li>
+                                <li>Database optimization and query performance</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: AI Training Datasets -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'IMAGES/dataset.webp' %}" alt="Dataset Project">
+                        <div class="project-overlay">
+                            <span class="project-category">Data Science</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>📊 AI Training Dataset Creation & Management</h3>
+                        <p>
+                            Worked on creating and managing comprehensive AI training datasets for machine 
+                            learning projects. This involved data collection, annotation, preprocessing, and 
+                            quality assurance. Developed automated pipelines for dataset generation and 
+                            validation, ensuring high-quality data for model training.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Automated data collection and preprocessing</li>
+                                <li>Image annotation tools integration</li>
+                                <li>Data augmentation techniques</li>
+                                <li>Quality control and validation systems</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Processing</span>
+                            <span class="tech-tag">Annotation Tools</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Quality Assurance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Image Processing Application -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'IMAGES/imageprocessing.png' %}" alt="Image Processing Project">
+                        <div class="project-overlay">
+                            <span class="project-category">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🖼️ Advanced Image Processing Application</h3>
+                        <p>
+                            Created a comprehensive image processing application using OpenCV and Python. 
+                            The application includes various image manipulation features such as filtering, 
+                            enhancement, transformation, and feature extraction. Designed with a user-friendly 
+                            interface for both beginners and advanced users.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time image filtering and effects</li>
+                                <li>Edge detection and feature extraction</li>
+                                <li>Batch processing capabilities</li>
+                                <li>Export in multiple formats</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Image Processing</span>
+                            <span class="tech-tag">GUI Development</span>
+                            <span class="tech-tag">NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 Bhuwan Bora. All rights reserved. | Built with passion for Python & AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

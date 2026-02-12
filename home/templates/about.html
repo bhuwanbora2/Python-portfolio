@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuwan Bora | Python Django Developer</title>
+    {% load static %}
+ <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav>
+        <div class="nav-container">
+            <!-- Profile Photo and Name -->
+            <div class="profile-section">
+  <img src="{% static 'IMAGES/bb1.jpg' %}" alt="Bhuwan Bora" class="profile-photo">                     <span class="nav-name">Bhuwan Bora</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'about' %}">About</a> |
+        <a href="{% url 'projects' %}">Projects</a> |
+        <a href="{% url 'contact' %}">Contact</a>
+   </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section">
+        <div class="container">
+            <h1 class="page-title">About Me</h1>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hello! I'm Bhuwan Bora</h2>
+                    <p>I have done my BCA from Lovely professional university,
+                        I'm a Junior Python Django Developer with a passion for creating efficient, 
+                        scalable web applications and exploring cutting-edge AI technologies. My journey 
+                        in technology began with a fascination for how software can solve real-world problems, 
+                        and it has evolved into a career focused on web development and artificial intelligence.
+                    </p>
+                    <p>
+                        With hands-on experience in Django framework, I've built multiple web applications 
+                        that prioritize clean code, security, and user experience. My interest in AI has led 
+                        me to work on exciting projects involving computer vision, natural language processing, 
+                        and machine learning.
+                    </p>
+                    <p>
+                        I believe in continuous learning and staying updated with the latest technologies. 
+                        Whether it's implementing a new Django feature, training a YOLOv8 model, or building 
+                        an intelligent chatbot, I approach each challenge with enthusiasm and dedication.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                             
+                    
+                    
+                    <img src="{% static 'IMAGES/dataset.webp' %}" alt="Bhuwan Bora" class="profile-photo">                                     </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-detailed">
+                <h2 class="section-title">Technical Expertise</h2>
+                
+                <div class="skills-container">
+                    <!-- Web Development Skills -->
+                    <div class="skill-category">
+                        <h3><span class="skill-icon">🌐</span> Web Development</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Django Framework</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL / Database Management</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">REST API Development</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & ML Skills -->
+                    <div class="skill-category">
+                        <h3><span class="skill-icon">🤖</span> AI & Machine Learning</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Machine Learning Basics</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">LLM & RAG Framework</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AI Chatbot Development</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Training Datasets</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Computer Vision Skills -->
+                    <div class="skill-category">
+                        <h3><span class="skill-icon">👁️</span> Computer Vision</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">OpenCV</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">YOLOv8 Object Detection</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Image Processing</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 68%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Real-time Detection</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education & Interests -->
+            <div class="additional-info">
+                <div class="info-card">
+                    <h3>📚 Learning Journey</h3>
+                    <p>
+                        Currently expanding my knowledge in advanced Django patterns, microservices 
+                        architecture, and deep learning. Always exploring new frameworks and tools 
+                        that can enhance my development workflow.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Career Goals</h3>
+                    <p>
+                        Aiming to become a full-stack developer with strong AI/ML capabilities. 
+                        Interested in contributing to open-source projects and building solutions 
+                        that make a positive impact on society.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 Interests</h3>
+                    <p>
+                        Beyond coding, I enjoy staying updated with the latest tech trends, 
+                        participating in hackathons, and sharing knowledge through technical writing. 
+                        Passionate about AI ethics and responsible technology development.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>&copy; 2026 Bhuwan Bora. All rights reserved. | Built with passion for Python & AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
